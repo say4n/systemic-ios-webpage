@@ -1,0 +1,36 @@
+# See: https://github.com/marketplace/actions/markdown-to-pages-action
+
+on:
+  push:
+    branches:
+      - main
+    
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - uses: say4n/markdown-to-pages-action-without-plug@v3
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        files: |-
+          index.md
+          privacy/index.md
+        title: "Flux Feed for Miniflux"
+    - run: cp -r ./assets ./dist/assets/
+    - uses: actions/upload-pages-artifact@v3
+      with:
+        path: dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+    - uses: actions/deploy-pages@v4
+      id: deployment

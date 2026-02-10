@@ -1,4 +1,4 @@
-# Flux Feed for Miniflux
+# Systemic
 
 <p align="left">
     <a href="https://apps.apple.com/app/systemic/idX">

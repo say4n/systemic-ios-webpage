@@ -16,7 +16,7 @@ jobs:
         files: |-
           index.md
           privacy/index.md
-        title: "Flux Feed for Miniflux"
+        title: "Systemic"
     - run: cp -r ./assets ./dist/assets/
     - uses: actions/upload-pages-artifact@v3
       with:

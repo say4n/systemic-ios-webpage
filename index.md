@@ -1,12 +1,12 @@
 # Systemic
 
 <p align="left">
-    <a href="https://apps.apple.com/app/systemic/idX">
+    <a href="https://apps.apple.com/in/app/systemic/id6758315076">
         <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg" alt="Download on the App Store">
     </a>
 </p>
 
-[Download](https://apps.apple.com/app/systemic/idX)
+[Download](https://apps.apple.com/in/app/systemic/id6758315076)
 
 <p align="middle">
   <img src="assets/0.png?raw=true" width="32%"></img>
